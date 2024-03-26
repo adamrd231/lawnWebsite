@@ -1,11 +1,14 @@
 import styled from '@emotion/styled'
 
 const Container = styled.div`
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+
 `;
 
 
@@ -14,17 +17,17 @@ const RightSideContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 `;
 
 const MenuItem = styled.div`
-  margin: 1rem;
+
 `;
 
 function Menu() {
   return (
     <Container>
-      <h1>ALM</h1>
+      <h1>T&S</h1>
       <RightSideContainer>
         <MenuItem>About</MenuItem>
         <MenuItem>Services</MenuItem>
