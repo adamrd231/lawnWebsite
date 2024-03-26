@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { useState } from 'react';
+import Gallery from './Gallery';
 
 const Container = styled.div`
   display: flex;
@@ -26,11 +27,20 @@ function Landing() {
       <h1>Hire local lawn pro for your Northern Michigan lawncare needs.</h1>
       <Button href="mailto:reedboards@gmail.com">Request a quote</Button> 
 
+      <h2>How it works</h2>
+      <h3>Request a quote</h3>
+      <p>We come out and perform our first mowing service for free, allowing up to measure and get a fair and accurate quote for work.</p>
 
+      <h3>Mow On Demand</h3>
+      <p>Existing customers can schedule services for any weekday using our online calendar, sending us a text or email.</p>
+
+      <h3>Payment after services</h3>
+      <p>We accept cash, Venmo, Square, Zelle and checks.</p>
 
       <h2>About</h2>
       <p>Servicing Northern Michigan, Tim & Sons lawn mowing is efficient, professional and hardworking crew the keep your lawn looking great this summer. </p>
 
+      <Gallery></Gallery>
       <h2>Lawn Services</h2>
       <p>Mowing</p>
       <p>Bagging / Removal</p>
