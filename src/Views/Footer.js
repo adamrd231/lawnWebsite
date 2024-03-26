@@ -27,45 +27,27 @@ const ColumnContainer = styled.div`
   margin: auto;
 `;
 
-const Label = styled.label`
-
-`;
-
-const Input = styled.input`
-  padding: 0.5rem;
-  margin-bottom: 3rem;
-`;
-
 const FooterTitle = styled.div`
   font-size: 1.4rem;
   font-weight: bold;
   margin-top: 1rem;
 
-`;
+`; 
 
 function Footer() {
-  const [currentEmail, setCurrentEmail] = useState();
-
-  const updateValue = (evt) => {
-    const val = evt.target.value;
-    setCurrentEmail(val);
-    console.log(val)
-  }
-
   return (
     <Container>
       <RowContainer>
-      <FooterTitle>Tim & Sons</FooterTitle>
-      </RowContainer>
-      <RowContainer>
-      <p>Cheboygan, Northern Michigan</p>
-      <p>Licensed & Insured</p>
+      <FooterTitle>Contact</FooterTitle>
       </RowContainer>
       <ColumnContainer>
+        <p>231-445-1463</p>
+        <p>Cheboygan, Northern Michigan</p>
+        <p>Licensed & Insured</p>
+      </ColumnContainer>
+      <ColumnContainer>
 
-        <Label htmlFor="email">Request a quote</Label>
-        <Input value={currentEmail} onChange={evt => updateValue(evt)} type="text" id="name" name="name" placeholder="enter email" />
-
+   
       </ColumnContainer>
     </Container>
     

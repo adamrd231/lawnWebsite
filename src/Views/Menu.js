@@ -6,9 +6,11 @@ const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   margin: auto;
-
+  background: #efefef;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
 `;
 
 
@@ -18,6 +20,7 @@ const RightSideContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+
 `;
 
 const MenuItem = styled.div`
