@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import { useState } from 'react';
 import Gallery from './Gallery';
 import Button from '../Components/Buttons';
+import MailtoButton from '../Components/MailtoButton';
 
 const Container = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ const Container = styled.div`
   justify-content: center;
   width: 100%;
   margin: auto;
-  height: 60vh;
+  height: 80vh;
   position: relative;
   color: white;
 `;
@@ -61,8 +62,7 @@ function Landing() {
         <Title>Northern Michigan Lawncare, Reliable, Local, Insured.</Title>
         <>Local and dedicated lawn care services provided by Adam Reed and family. Our small team is ready to help bring your lawn to life, offering services from landscpaing, mowing, clean-up and aeration, we are a full-service lawncare company.</>
         <RowContainer>
-          <Button href="mailto:reedboards@gmail.com">Request a quote</Button> 
-          <Button href="mailto:reedboards@gmail.com">Details</Button> 
+          <MailtoButton href="mailto:reedboards@gmail.com">Request a quote</MailtoButton> 
         </RowContainer>
       </TextContainer>
       <BackgroundImage src='lawn.jpeg'/>

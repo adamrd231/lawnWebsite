@@ -23,9 +23,9 @@ function App() {
     <Container>
       <Menu />
       <Landing />
-      <CalendarQuote />
-      <GetFreeEstimate />
       <Gallery />
+      <GetFreeEstimate />
+
       <Footer />
     </Container>
   );
