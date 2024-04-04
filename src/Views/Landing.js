@@ -41,17 +41,7 @@ function Landing() {
       <p>Servicing Northern Michigan, Tim & Sons lawn mowing is efficient, professional and hardworking crew the keep your lawn looking great this summer. </p>
 
       <Gallery></Gallery>
-      <h2>Lawn Services</h2>
-      <p>Mowing</p>
-      <p>Bagging / Removal</p>
-      <p>Weedwacking</p>
-      <p>Power edging</p>
-      <p>Aeration</p>
-
-      <h2>Garden Services</h2>
-      <p>Hedge Trimming</p>
-      <p>Mulch</p>
-      <p>Weeding</p>
+   
     </Container>
   );
 }

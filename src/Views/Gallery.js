@@ -11,7 +11,7 @@ function Gallery() {
   const item = {
     services: [
       {
-        name: "Services",
+        name: "Lawn Services",
         items: [
           "Lawn Mowing",
           "Aeration",
@@ -19,7 +19,7 @@ function Gallery() {
         ]
       },
       {
-        name: "Services",
+        name: "Garden Services",
         items: [
           "Lawn Mowing",
           "Aeration",
@@ -33,14 +33,19 @@ function Gallery() {
 
   return (
     <Container>
+      {/* Map through item object to display name of services and then the items in the object as a list below the name */}
       { item && item.services.map((service) => (
-        <p>{service.name}</p>
-      { service.items && service.items.map((item) => (
-          <p>{ item }</p>
-      ))}
-
-      ))}
-      
+          <div>
+            <h2>{service.name}</h2>
+            <ul>
+              {service.items && service.items.map((item) => (
+                  <li>{item}</li>
+                )
+              )}
+            </ul>
+          </div>
+        )
+      )}
     </Container>
   )
 }
