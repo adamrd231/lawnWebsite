@@ -5,6 +5,7 @@ import styled from '@emotion/styled'
 import Footer from './Views/Footer';
 import Gallery from './Views/Gallery';
 import GetFreeEstimate from './Views/GetFreeEstimate';
+import CalendarQuote from './Views/CalendarQuote';
 
 const Container = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ function App() {
     <Container>
       <Menu />
       <Landing />
+      <CalendarQuote />
       <GetFreeEstimate />
       <Gallery />
       <Footer />

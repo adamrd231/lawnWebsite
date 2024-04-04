@@ -54,6 +54,25 @@ const Textarea = styled.textarea`
 `;
 
 function GetFreeEstimate( /* props */ ) {
+
+  // create function to get formdata and send as an email 
+  // on submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // get form data
+    const formData = new FormData(e.target);
+    // create object to store form data
+    const data = {};
+    // loop through form data
+    for (let [key, value] of formData.entries()) {
+      // add form data to object
+      data[key] = value;
+    }
+    // log the form data
+    console.log(data);
+  }
+
+
   return ( 
     <Container>
       <ColumnContainer>
@@ -66,19 +85,10 @@ function GetFreeEstimate( /* props */ ) {
       </ColumnContainer>
       
       <ColumnContainer>
-        <Form>
-          <Label for="name">Name:</Label>
-          <Input placeholder="name" type="text" id="name" name="name" required></Input>
-          <Label for="services">Services:</Label>
-          <Input placeholder="Lawn mowing, Leaves, Lawnscaping, etc..." type="text" id="services" name="services" required></Input>
-          <Label for="phone">Phone:</Label>
-          <Input placeholder="telephone" type="tel" id="phone" name="phone" required></Input>
-          <Label for="email">Email:</Label>
-          <Input placeholder="email" type="email" id="email" name="email" required></Input>
-          <Label for="message">Message:</Label>
-          <Textarea placeholder="Anything we should know?" id="message" name="message" required></Textarea>
+        <a href="mailto:adam@rdconcepts.design">
           <Button type="submit">Let's Mow!</Button>
-        </Form>
+        </a>
+
       </ColumnContainer>
      
     </Container>
