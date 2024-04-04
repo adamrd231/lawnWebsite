@@ -39,7 +39,7 @@ const MenuItem = styled.div`
 function Menu() {
   return (
     <Container>
-      <Title>Northern Lawn Mowing</Title>
+      <Title>MI Lawn Care</Title>
       <RightSideContainer>
         <MenuItem>Special Deal, Free lawn service with first estimate or with leaf removal</MenuItem>
       </RightSideContainer>

@@ -25,7 +25,6 @@ function App() {
       <Landing />
       <Gallery />
       <GetFreeEstimate />
-
       <Footer />
     </Container>
   );

@@ -34,6 +34,7 @@ const BackgroundImage = styled.img`
   background-blend-mode: darken;
   object-fit: cover;
   position: absolute;
+  filter: blur(3px);
   z-index: -2;
 `;
 

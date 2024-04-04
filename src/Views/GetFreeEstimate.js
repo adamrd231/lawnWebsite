@@ -4,23 +4,20 @@ import MailtoButton from "../Components/MailtoButton";
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-top: 5rem;
-  gap: 5rem;
+  gap: 1rem;
 `;
 
 const ColumnContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: flex-start;
-  min-height: 30vh;
-  // two rows, equal sizing
-  width: 50%;
+  justify-content: center;
 
 `;
 
