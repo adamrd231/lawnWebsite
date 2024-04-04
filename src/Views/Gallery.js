@@ -8,6 +8,10 @@ const Container = styled.div`
   align-items: center;
   gap: 3rem;
   margin: 3rem;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 `;
 
 const UL = styled.ul`
@@ -36,6 +40,9 @@ const ServiceContainer = styled.div`
   // create drop shadow for white background
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 3rem;
+  @media (max-width: 750px) {
+    padding: 3rem 6rem;
+  }
 
 `;
 

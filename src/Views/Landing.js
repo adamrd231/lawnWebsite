@@ -14,6 +14,11 @@ const Container = styled.div`
   height: 80vh;
   position: relative;
   color: white;
+
+
+  @media (max-width: 750px) {
+    height: 100vh;
+  }
 `;
 
 const RowContainer = styled.div`
@@ -25,6 +30,9 @@ const RowContainer = styled.div`
 const Title = styled.h1`
   font-size: 4rem;
   font-weight: bold;
+  @media (max-width: 750px) {
+    font-size: 2rem;
+  }
 `;
 
 // Create a styled image that takes the lawn.jped asset from the public folder
