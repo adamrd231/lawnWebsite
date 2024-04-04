@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Button from "../Components/Buttons";
 
 const Container = styled.div`
   display: flex;
@@ -31,12 +32,25 @@ const Form = styled.form`
 const Label = styled.label`
   font-size: 0.66rem;
   padding: 0.25rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333333;
 
 `;
 
 const Input = styled.input`
   font-size: 1rem;
   padding: 0.25rem 0;
+  border: none;
+  // create bottom only border
+  border-bottom: 1px solid #33333340;
+`;
+
+const Textarea = styled.textarea`
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  border: none;
+  border-bottom: 1px solid #33333340;
 `;
 
 function GetFreeEstimate( /* props */ ) {
@@ -56,14 +70,14 @@ function GetFreeEstimate( /* props */ ) {
           <Label for="name">Name:</Label>
           <Input placeholder="name" type="text" id="name" name="name" required></Input>
           <Label for="services">Services:</Label>
-          <Input type="text" id="services" name="services" required></Input>
+          <Input placeholder="Lawn mowing, Leaves, Lawnscaping, etc..." type="text" id="services" name="services" required></Input>
           <Label for="phone">Phone:</Label>
-          <Input type="tel" id="phone" name="phone" required></Input>
+          <Input placeholder="telephone" type="tel" id="phone" name="phone" required></Input>
           <Label for="email">Email:</Label>
-          <Input type="email" id="email" name="email" required></Input>
+          <Input placeholder="email" type="email" id="email" name="email" required></Input>
           <Label for="message">Message:</Label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Submit</button>
+          <Textarea placeholder="Anything we should know?" id="message" name="message" required></Textarea>
+          <Button type="submit">Let's Mow!</Button>
         </Form>
       </ColumnContainer>
      
