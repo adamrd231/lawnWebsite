@@ -4,6 +4,7 @@ import Landing from './Views/Landing';
 import styled from '@emotion/styled'
 import Footer from './Views/Footer';
 import Gallery from './Views/Gallery';
+import GetFreeEstimate from './Views/GetFreeEstimate';
 
 const Container = styled.div`
   display: flex;
@@ -21,6 +22,7 @@ function App() {
     <Container>
       <Menu />
       <Landing />
+      <GetFreeEstimate />
       <Gallery />
       <Footer />
     </Container>
