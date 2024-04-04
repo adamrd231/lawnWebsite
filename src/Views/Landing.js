@@ -5,11 +5,15 @@ import Gallery from './Gallery';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  min-height: 100vh;
+  min-height: 60vh;
+  background-image: url('/lawn.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
 `;
 
 const Button = styled.a`
@@ -17,30 +21,33 @@ const Button = styled.a`
   margin-bottom: 3rem;
   padding: 0.5rem 1.25rem;
   border: 1px solid #333;
+  min-width: 7rem;
+  text-align: center;
 `;
 
+const RowContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+`;
+
+
+const Title = styled.h1`
+  font-size: 4rem;
+  font-weight: bold;
+`;
 
 function Landing() {
 
   return (
     <Container>
-      <h1>Hire local lawn pro for your Northern Michigan lawncare needs.</h1>
+      <o>Let a local Northern Michigan Business help</o>
+      <Title>Provide Your Lawn Care.</Title>
+      <RowContainer>
       <Button href="mailto:reedboards@gmail.com">Request a quote</Button> 
+      <Button href="mailto:reedboards@gmail.com">Details</Button> 
+      </RowContainer>
 
-      <h2>How it works</h2>
-      <h3>Request a quote</h3>
-      <p>We come out and perform our first mowing service for free, allowing up to measure and get a fair and accurate quote for work.</p>
-
-      <h3>Mow On Demand</h3>
-      <p>Existing customers can schedule services for any weekday using our online calendar, sending us a text or email.</p>
-
-      <h3>Payment after services</h3>
-      <p>We accept cash, Venmo, Square, Zelle and checks.</p>
-
-      <h2>About</h2>
-      <p>Servicing Northern Michigan, Tim & Sons lawn mowing is efficient, professional and hardworking crew the keep your lawn looking great this summer. </p>
-
-      <Gallery></Gallery>
    
     </Container>
   );
