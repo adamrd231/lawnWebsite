@@ -8,18 +8,37 @@ const Container = styled.div`
 
 function Gallery() {
 
-  const Services = [
-      "Lawn Mowing",
-      "Aeration",
-      "Weed wacking"
-  ]
+  const item = {
+    services: [
+      {
+        name: "Services",
+        items: [
+          "Lawn Mowing",
+          "Aeration",
+          "Weed wacking"
+        ]
+      },
+      {
+        name: "Services",
+        items: [
+          "Lawn Mowing",
+          "Aeration",
+          "Weed wacking"
+        ]
+      }
+      
+    ]
+  }
   const [items, setItems] = useState();
 
   return (
     <Container>
-      
-      { Services && Services.map((service) => (
-        <p>{service}</p>
+      { item && item.services.map((service) => (
+        <p>{service.name}</p>
+      { service.items && service.items.map((item) => (
+          <p>{ item }</p>
+      ))}
+
       ))}
       
     </Container>
